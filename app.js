@@ -3,7 +3,6 @@ const bodyParser = require("body-parser");
 
 const mongoose = require('mongoose');
 const _ = require('lodash');
-
 const app = express();
 
 app.use(bodyParser.urlencoded({extended:true}));
@@ -134,4 +133,4 @@ app.get("/about", function(req, res){
 })
 app.listen(process.env.PORT || 3000, function(){
     console.log("server started Successfully");
-})
+});
