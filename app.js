@@ -43,7 +43,7 @@ app.get("/", function(req, res){
                     console.log("Successfully saved default items to the DB")
                 }
             });
-            res.redirect('/');
+            res.redirect("/");
         }else{
             res.render("list", {listTitle: "Today", newlistItem:result});
         }        
